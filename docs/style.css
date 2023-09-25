@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.infobar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: calc(100% / 5);
+  background-color: red;
+}
+
+.content {
+  margin-left: calc(calc(100% / 5) + 3.6rem);
+}
+/* Menu Links */
+ul.main-menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  list-style: none;
+}
+
+ul.main-menu li a {
+  margin-right: 20px;
+  font-size: 2rem;
+  border-bottom: solid transparent 3px;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 45% 45%;
+}
+
+.column {
+}
+
+.education {
+  border: 1px solid black;
+}
+
+.experience {
+  border: 1px solid black;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 45% 45%;
+}

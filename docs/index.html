@@ -1,56 +1,67 @@
 <!doctype html>
 <html>
   <head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  
-  <body>
 
-    <header id="header">
-      <h1>Simple Website</h1>
-      
-      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
-      <ul class="main-menu">
-        <li><a href="#home">home</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#contact">contact</a></li>
-      </ul>                 
-    </header>
-   
-    <div id="container">
-      <div class="inner">
-        <div id="content"> 
-          
-          <div id="home" class="content-region hide">
-            <h2>Home</h2>
-            <p>
-              This is a simple website template published with Github Pages. <a href="https://github.com/cpl-makerlab/simple-website-template">Fork this repository</a> to create your own site!
-            </p>
-          </div>
-          
-          <div id="about" class="content-region hide">
-            <h2>About</h2>
-            <p>
-              Sed tempus urna et pharetra pharetra massa massa ultricies. Porttitor rhoncus dolor purus non enim praesent. Id aliquet risus feugiat in ante metus dictum. 
-            </p>
-          </div>
-          
-          <div id="contact" class="content-region hide">
-            <h2>Contact</h2>
-            <p>
-              Pellentesque nec nam aliquam sem et tortor consequat. Quisque sagittis purus sit amet volutpat consequat. Magna eget est lorem ipsum dolor. 
-            </p>
-          </div>
-          
+  <body>
+    <div class="infobar">Aqui pongo el menu de navegacion</div>
+    <main>
+      <div class="content">
+        <article>
+          <h1>Acerca de mi</h1>
+
+          <p>
+            No se cual es el punto en todas las cosas que he hecho hasta este
+            punto de mi vida.
+          </p>
+
+          <p>
+            Soy muy bueno siguiendo siguiendo instrucciones aunque prefiero que
+            sean de forma escrita.
+          </p>
+
+          <p>Me gustaría ser invisible para no ser percibido.</p>
+
+        </article>
+        <div class="column">
+          <h2>Experiencia</h2>
+          <p>
+            Realice mis prácticas profesionales en la
+            <a href="https://www.facebook.com/fundacion.hidalguenseac.5/"
+              >Fundación hidalguense AC</a
+            >, en donde estuve a cargo de la creación de una guía de estudio de
+            matemáticas para estudiantes de nivel medio superior
+          </p>
+          <p>
+            Durante un año trabajé como desarrollador junior en Math/Code. En
+            los proyectos realizados destacan el desarrollo de un sistema de
+            facturación escrito en Python y un sistema de control de alumnos
+            desarrollado utilizando React y Flutter para el frontend y Amazon
+            Web Services para el backend.
+          </p>
+          <h2>Proyectos</h2>
+        </div>
+        <div class="column">
+          <h2>Educación</h2>
+          <p>
+            Me titulé como Licenciado en Matemáticas Aplicadas con énfasis en
+            computación por parte de la
+            <a href="https://www.uaeh.edu.mx"
+              >Universidad Autónoma del Estado de Hidalgo.</a
+            >
+          </p>
+          <p>
+            Adicionalmente cuento con un grado de Técnico en Programación por
+            parte del
+            <a href="https://cbtis83.edu.mx/"
+              >Centro de Bachillerato Tecnológico Industrial y de Servicios
+              número 83</a
+            >.
+          </p>
         </div>
       </div>
-    </div>
-
-    <footer>  
-      Footer region
-    </footer>
-    
-    <!-- Load additional JS scripts here -->
-    <script type="text/javascript" src="script.js"></script>
-    
+    </main>
+    <footer>Footer region</footer>
   </body>
 </html>
