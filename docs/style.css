@@ -17,6 +17,13 @@
     width: calc(100% / 5);
   }
 
+  .infobar-inner {
+    position: absolute;
+    right: 1rem;
+    left: 1rem;
+    bottom: 1rem;
+  }
+
   .container {
     max-width: 46rem;
     position: relative;
@@ -47,13 +54,40 @@ main {
   flex: 1 0 auto;
 }
 
+a {
+  background: white;
+  color: #3584e4;
+}
+
+a:visited,
+a:link {
+  color: #1c71d8;
+}
+
+a:hover {
+  background: #3584e4;
+  color: white;
+}
+
 p {
   max-width: 46rem;
 }
 
 .infobar {
-  background-color: #3d3846;
-  color: #f6f5f4;
+  background-color: #f6f5f4;
+  color: #241f31;
+}
+
+.infobar a {
+  color: #241f31;
+  background: transparent;
+  text-decoration: none;
+}
+
+.infobar-inner {
+  max-width: 38rem;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .container {
@@ -61,15 +95,15 @@ p {
 }
 
 .trivia {
-  border-right: 1px solid blue;
-  border-top: 1px solid blue;
-  border-bottom: 1px solid blue;
-  border-left: 5px solid magenta;
+  border-right: 1px solid #62A0EA;
+  border-top: 1px solid #62A0EA;
+  border-bottom: 1px solid #62A0EA;
+  border-left: 5px solid #62A0EA;
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: 0.85rem;
 }
 
 .trivia h3 {
-  color: blue;
+  color: #1C71D8;
 }
