@@ -1,55 +1,75 @@
+@media screen and (min-width: 90em) {
+  .container {
+    max-width: 62rem;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  html {
+    font-size: 20px;
+  }
+
+  .infobar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: calc(100% / 5);
+  }
+
+  .container {
+    max-width: 46rem;
+    position: relative;
+    margin-left: calc(calc(100% / 5) + 3.6rem);
+  }
+}
+
+@media screen and (min-width: 44.374em) {
+  .container {
+    max-width: 42rem;
+  }
+}
+
+html {
+  font-family: "Cantarell", sans-serif;
+}
+
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: 'Noto Sans', sans-serif;
+  line-height: 1.44;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+p {
+  max-width: 46rem;
 }
 
 .infobar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: calc(100% / 5);
-  background-color: red;
+  background-color: #3d3846;
+  color: #f6f5f4;
 }
 
-.content {
-  margin-left: calc(calc(100% / 5) + 3.6rem);
-}
-/* Menu Links */
-ul.main-menu {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  list-style: none;
+.container {
+  margin: 1.44rem auto;
 }
 
-ul.main-menu li a {
-  margin-right: 20px;
-  font-size: 2rem;
-  border-bottom: solid transparent 3px;
+.trivia {
+  border-right: 1px solid blue;
+  border-top: 1px solid blue;
+  border-bottom: 1px solid blue;
+  border-left: 5px solid magenta;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.85rem;
 }
 
-.info {
-  display: grid;
-  grid-template-columns: 45% 45%;
-}
-
-.column {
-}
-
-.education {
-  border: 1px solid black;
-}
-
-.experience {
-  border: 1px solid black;
-}
-
-.skills {
-  display: grid;
-  grid-template-columns: 45% 45%;
+.trivia h3 {
+  color: blue;
 }
